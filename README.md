@@ -6,10 +6,11 @@ ASP.NET Core 학습 리포지토리
 2. Visual Studio(IDE) 개발환경 설정
 3. 웹 기반기술
    - HTML 5, CSS 3, javascript (ECMAScript 6) 전체개요
+   <a href = "https://www.naver.com/"></a>
   
 ## 2일차
 1. 웹 기반기술
-   - HTML 기본<ins>태그</ins>
+   - HTML 기본태그
    - CSS 전반 학습
    - javascript  문법
    
