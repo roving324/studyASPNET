@@ -9,6 +9,69 @@
     <p><small>안녕</small><sub>하세</sub>요, <b>HTML</b> <i><ins>학습</ins></i>시간입니다.</p>
     <p>e = mc<sup>2</sup></p>
     <p>여기는 <del>생략</del>입니다.</p>
-    
+    <hr /><!--가로줄 추가-->
+    <h2>목록 태그</h2>
+    <ol>
+        <li><a href="https://www.google.com" target="_blank">구글  </a></li> <!--_blank: 새 창 띄우기-->
+        <li><a href="https://www.naver.com" target="_blank">네이버</a></li>
+        <li><a href="https://www.kakao.com" target="_blank">카카오</a></li>
+    </ol>
+    <ul>
+        <li>스타크래프트</li>
+        <li>워크래프트</li>
+        <li>디아블로</li>
+    </ul>
+
+    <ol>
+        <li>
+            웹 기반기술
+            <ul>
+                <li>HTML 기본테그</li>
+                <li>CSS 전반학습</li>
+                <li>javascript 문법</li>
+            </ul>
+        </li>
+        <li>ASP.NET Core 소개</li>
+    </ol>
+    <h2>테이블</h2>
+    <table border="1">
+        <!--
+            border:경계선
+            테이블은 속도를 낮추며 현재 잘 사용을 안함.
+        -->
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+        </tr>
+        <tr>
+            <th rowspan="2">1교시</th> <!--셀 제목(크기차이)--> <!--rowspen 열 셀 합치기-->
+            <td>영어</td>  <!--일반 셀-->
+            <td>국어</td>
+            <td>과학</td>
+            <td>수학</td>
+            <td>미술</td>
+            <td>사회</td>
+        </tr>
+        <tr>
+            <th>2교시</th>
+            <td>도덕</td>
+            <td>체육</td>
+            <td>공업</td>
+            <td colspan="2">음악</td> <!--셀 합치기-->
+        </tr>
+    </table>
+    <h2>이미지</h2>
+    <img src="https://i.pinimg.com/550x/6f/3a/82/6f3a82fb3e144ee0dee2550bd93cd10b.jpg" alt="사진" title="풍경사진" width="500" height="450" />
+    <h2>비디오</h2>
+    <video controls="controls">
+        <source src="" type="video/mp4" />
+    </video>
+    <h2>이미지</h2>
+    <img src="cat.png" alt="사진" title="고양이사진"/>
 </body>
 </html>
