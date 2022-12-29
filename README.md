@@ -9,7 +9,7 @@ ASP.NET Core 학습 리포지토리
   
 ## 2일차
 1. 웹 기반기술
-   - HTML 기본태그
+   - HTML 기본<ins>태그</ins>
    - CSS 전반 학습
    - javascript  문법
    
