@@ -14,11 +14,14 @@ ASP.NET Core 학습 리포지토리
 1. 웹 기반기술
    - HTML 기본태그
    - CSS 전반 학습
-   - javascript  문법
    
 ## 3일차
 - 웹 기반기술
-
+   - 반응형 웹 (Responsive Web)
+   - Javascript 문법
+   - Dom (Document Object Model)
+   - jQuery
+   
 ## 4일차
 - ASP.NET Core 시작
 
