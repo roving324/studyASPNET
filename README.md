@@ -9,6 +9,7 @@ ASP.NET Core 학습 리포지토리
    - <a href = "https://www.naver.com/">네이버</a>
    - <p>그림</p>
    <img src="https://github.com/roving324/studyASPNET/blob/main/Images/html_screen01.png" />
+   <img src="https://github.com/roving324/studyASPNET/blob/main/Images/html_screen02.png" />
   
 ## 2일차
 1. 웹 기반기술
