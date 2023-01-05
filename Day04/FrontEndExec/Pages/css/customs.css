@@ -42,7 +42,7 @@ html {
     height: 40px;
     left: 50%;
     margin-left: -100px;
-    background: url('logo.png');
+    background: url('../logo.png');
     background-repeat: no-repeat; /*사진 반복금지*/
     text-indent: -9999px;
 }
@@ -51,7 +51,7 @@ html {
 .outer-menu {
     float: left;
     width: 100px;
-    /*height: 200px;*/
+    height: 150px;
     line-height: 20px;
     padding: 10px 0 0 0;
     position: relative;
@@ -90,6 +90,7 @@ html {
     background: #faf7f7;
     border-top: 1px solid #cfcaca;
     box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.4);
+    margin-left: 200px;
 }
 
 #main-navigation > ul {
