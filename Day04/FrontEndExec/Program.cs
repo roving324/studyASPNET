@@ -1,4 +1,4 @@
-namespace BasicWebApp
+namespace FrontEndExec
 {
     public class Program
     {
