@@ -90,12 +90,12 @@ html {
     background: #faf7f7;
     border-top: 1px solid #cfcaca;
     box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.4);
-    margin-left: 200px;
 }
 
 #main-navigation > ul {
     overflow: hidden; /* 내영역은 가로 끝까지 다 차지 */
     text-align: center;
+    margin-left: 190px;
 }
 
     #main-navigation > ul > li {
@@ -132,11 +132,11 @@ html {
     color: #555555;
 }
 
-    .input-search:focus {
-        border-color: rgba(82, 168, 236, 0.8);
-        outline: 0;
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    }
+.input-search:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
 
 .input-submit {
     display: inline-block;
