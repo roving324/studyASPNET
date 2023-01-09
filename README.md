@@ -30,6 +30,8 @@ ASP.NET Core 학습 리포지토리
 
 ![라이트박스화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen02.png)
 라이트박스화면
+<a https://placeimg.com/>참고(Dock, Examples, Icons)</a>
+
 ## 5일차
 1. ASP.NET Core
    - 기본개요
