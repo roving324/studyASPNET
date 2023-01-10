@@ -1,6 +1,7 @@
 ﻿using BoardWebApp.Data;
 using BoardWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BoardWebApp.Controllers
 {
@@ -13,11 +14,17 @@ namespace BoardWebApp.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// 기본 리스트 조회화면
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
-            IEnumerable<Note> list = _context.Notes.ToList(); // DB에서 데이터 가져와서...
+            // EntityFramework로 쿼리없이
+            //IEnumerable<Note> list = _context.Notes.ToList(); // DB에서 데이터 가져와서...
+            var list = _context.Notes.FromSqlRaw($"SELECT TOP(5) * FROM Notes").ToList();
 
-            ViewData["Title"] = "컨트롤러에 온 게시판"; // ViewData는 백엔드 프론트엔 어디든지 쓸수있음
+            //ViewData["Title"] = "컨트롤러에 온 게시판"; // ViewData는 백엔드 프론트엔 어디든지 쓸수있음
             return View(list);
         }
 
@@ -83,12 +90,24 @@ namespace BoardWebApp.Controllers
 			var note = _context.Notes.Find(id);
 			if (note == null) return NotFound();
 
-            _context.Notes.Remove(note); // EELETE 쿼리
-            _context.SaveChanges();
+           return View(note);
+		}
 
-            // 삭제메세지 추가
-            TempData["success"] = "삭제되었습니다.";
-            return RedirectToAction("Index", "Note");
+        // Action 이름이 Delete가 아니지만 Delete로 동작하게 해주는 기능 
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int? id)
+        {
+			if (id is null) return NotFound();
+			var note = _context.Notes.Find(id);
+			if (note == null) return NotFound();
+
+			_context.Notes.Remove(note); // EELETE 쿼리
+			_context.SaveChanges();
+
+			// 삭제메세지 추가
+			TempData["success"] = "삭제되었습니다.";
+			return RedirectToAction("Index", "Note");
 		}
 
         /// <summary>

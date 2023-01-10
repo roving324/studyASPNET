@@ -56,6 +56,7 @@ ASP.NET Core 학습 리포지토리
    - 게시판 추가기능
    - 페이징 기능
    - 게시판 완성
+   - <a href="https://github.com/CodeSeven/toastr">Toastr 사용</a>
    
 2. 결과화면
 
