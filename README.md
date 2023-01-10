@@ -30,7 +30,7 @@ ASP.NET Core 학습 리포지토리
 
 ![라이트박스화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen02.png)
 라이트박스화면<br/>
-<a href="https://placeimg.com/" target="_blank">참고사이트</a>
+<a href="https://placeimg.com/">참고사이트</a>
 
 ## 5일차
 1. ASP.NET Core
@@ -64,3 +64,4 @@ ASP.NET Core 학습 리포지토리
    - 회원가입
    - 로그인
    - 세션관리
+   - <a href="https://getbootstrap.com">참고사이트(Dock, Examples, Icons)</a>
