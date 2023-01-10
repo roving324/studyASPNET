@@ -1,4 +1,5 @@
 using BoardWebApp.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace BoardWebApp
@@ -16,7 +17,12 @@ namespace BoardWebApp
                builder.Configuration.GetConnectionString("DBConnection")
                ));
 
-            var app = builder.Build();
+			// ASPNET Identity용 서비스 추가
+			builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+				.AddEntityFrameworkStores<ApplicationDbContext>()
+				.AddDefaultTokenProviders();
+
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -30,6 +36,8 @@ namespace BoardWebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication(); // 이제부터 계정사용
 
             app.UseAuthorization();
 

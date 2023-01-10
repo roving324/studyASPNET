@@ -5,6 +5,7 @@
 @if (TempData["success"] != null)
 {
 	<script>
+		toastr.options.positionClass = "toast-bottom-center";
 		toastr.success('@TempData["success"]','성공메세지');
 	</script>
 }
