@@ -17,7 +17,7 @@ ASP.NET Core 학습 리포지토리
    - 반응형 웹 (Responsive Web)
    - Javascript 문법
    - Dom (Document Object Model)
-   - jQuery
+   - <a href="https://code.jquery.com">jQuery</a>
    
 ## 4일차
 1. 웹 기반기술 총 복습
@@ -49,7 +49,7 @@ ASP.NET Core 학습 리포지토리
    - 게시판 리스트
    - 게시판 글 생성
    - trumbowyg 에디터 추가
-   - <a href="https://getbootstrap.com" target="_blank">참고사이트(Dock, Examples, Icons)</a>
+   - <a href="https://getbootstrap.com">참고사이트</a>(Dock, Examples, Icons)
    
 ## 7일차
 1. ASP.NET Core
@@ -64,4 +64,3 @@ ASP.NET Core 학습 리포지토리
    - 회원가입
    - 로그인
    - 세션관리
-   - <a href="https://getbootstrap.com">참고사이트(Dock, Examples, Icons)</a>

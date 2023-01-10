@@ -16,6 +16,8 @@ namespace BoardWebApp.Controllers
         public IActionResult Index()
         {
             IEnumerable<Note> list = _context.Notes.ToList(); // DB에서 데이터 가져와서...
+
+            ViewData["Title"] = "컨트롤러에 온 게시판"; // ViewData는 백엔드 프론트엔 어디든지 쓸수있음
             return View(list);
         }
 
@@ -39,6 +41,9 @@ namespace BoardWebApp.Controllers
         {
             _context.Notes.Add(note); // INSERT 쿼리 실행
             _context.SaveChanges();   // 트랜잭션 commit
+
+            // 처리메세지 추가
+            TempData["success"] = "저장되었습니다.";
 
             return RedirectToAction("Index", "Note"); // 화면전환
         }
@@ -65,9 +70,12 @@ namespace BoardWebApp.Controllers
             _context.Notes.Update(note);
             _context.SaveChanges();
 
+            // 수정메세지 추가
+            TempData["success"] = "수정되었습니다.";
+
 			return RedirectToAction("Index", "Note");
 		}
-
+        
         [HttpGet]
         public IActionResult Delete(int? id)
         {
@@ -78,6 +86,8 @@ namespace BoardWebApp.Controllers
             _context.Notes.Remove(note); // EELETE 쿼리
             _context.SaveChanges();
 
+            // 삭제메세지 추가
+            TempData["success"] = "삭제되었습니다.";
             return RedirectToAction("Index", "Note");
 		}
 
