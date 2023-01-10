@@ -58,6 +58,8 @@ ASP.NET Core 학습 리포지토리
    - <a href="https://github.com/CodeSeven/toastr">Toastr</a> 사용
    
 2. 결과화면
+![게시판페이징화면](https://github.com/roving324/studyASPNET/blob/main/Images/asp.net_screen01.png)
+게시판페이징화면
 
 ## 8일차
 1. ASP.NET Core
