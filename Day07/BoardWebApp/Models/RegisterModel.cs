@@ -5,26 +5,26 @@ namespace BoardWebApp.Models
 {
 	public class RegisterModel
 	{
-		[Required]
+		[Required(AllowEmptyStrings = false, ErrorMessage = "아이디를 입력하세요.")]
 		[Display(Name = "아이디")]
-		public int Id { get; set; }
+		public string Id { get; set; }
 
-		[Required]
-		[Display(Name = "이름")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "이름을 입력하세요.")]
+        [Display(Name = "이름")]
 		public string UserName { get;set; }
 
-		[Required]
-		[EmailAddress]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "이메일을 입력하세요.")]
+        [EmailAddress]
 		[Display(Name = "이메일")]
 		public string Email { get; set; }
 
-		[Required]
-		[DataType(DataType.Password)]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "패스워드를 입력하세요.")]
+        [DataType(DataType.Password)]
 		[Display(Name = "패스워드")]
 		public string Password { get; set; }
 
-		[Required]
-		[DataType(DataType.Password)]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "패스워드 확인을 입력하세요.")]
+        [DataType(DataType.Password)]
 		[Display(Name = "패스워드 확인")]
 		[Compare("Password", ErrorMessage = "패스워드가 일치하지 않습니다.")]
 		public string ConfirmPassword { get; set; }

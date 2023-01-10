@@ -55,6 +55,7 @@ ASP.NET Core 학습 리포지토리
    - 게시판 추가기능
    - 페이징 기능
    - 게시판 완성
+   - 회원가입 진행 중
    - <a href="https://github.com/CodeSeven/toastr">Toastr</a> 사용
    
 2. 결과화면
@@ -63,6 +64,5 @@ ASP.NET Core 학습 리포지토리
 
 ## 8일차
 1. ASP.NET Core
-   - 회원가입
    - 로그인
    - 세션관리

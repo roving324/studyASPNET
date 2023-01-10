@@ -37,13 +37,18 @@ namespace BoardWebApp.Controllers
             int startCount = ((page - 1) * countNum) + 1;//1, 11
 			int endCount = startCount + 9; // 10, 20
 
+            
+
             // 뷰에 마지막 페이지, 이전페이지, 다음페이지 표시
             ViewBag.StartPage = startpage;
             ViewBag.EndPage = endpage;
             ViewBag.Page = page;
             ViewBag.TotalPage = totalpage;
 
+			//ViewBag.EndPage = totalCount;
+			//startCount = page; endCount = page;
             var list = _context.Notes.FromSqlRaw($"EXECUTE dbo.USP_PagingNotes @StartCount = {startCount}, @EndCount={endCount}").ToList();
+
 
             ViewData["Title"] = "컨트롤러에 온 게시판"; // ViewData는 백엔드 프론트엔 어디든지 쓸수있음
             return View(list);
