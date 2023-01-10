@@ -38,10 +38,10 @@ ASP.NET Core 학습 리포지토리
    - 기본프로젝트
    - 게시판 만들기 프로젝트 생성
    - NuGet 패키지 설치
-   <li>Microsoft.EntityFrameworkCore</li>
-   <li>Microsoft.EntityFrameworkCore.SqlServer</li>
-   <li>Microsoft.EntityFrameworkCore.Tools</li>
-   <li>Microsoft.VisualStudio.Web.CodeGeneration.Design</li>
+     - Microsoft.EntityFrameworkCore
+     - Microsoft.EntityFrameworkCore.SqlServer
+     - Microsoft.EntityFrameworkCore.Tools
+     - Microsoft.VisualStudio.Web.CodeGeneration.Design
    
 ## 6일차
 1. ASP.NET Core
