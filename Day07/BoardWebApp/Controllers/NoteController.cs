@@ -1,6 +1,7 @@
 ﻿using BoardWebApp.Data;
 using BoardWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace BoardWebApp.Controllers
@@ -18,13 +19,33 @@ namespace BoardWebApp.Controllers
         /// 기본 리스트 조회화면
         /// </summary>
         /// <returns></returns>
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
             // EntityFramework로 쿼리없이
             //IEnumerable<Note> list = _context.Notes.ToList(); // DB에서 데이터 가져와서...
-            var list = _context.Notes.FromSqlRaw($"SELECT TOP(5) * FROM Notes").ToList();
+            //var list = _context.Notes.FromSqlRaw($"SELECT TOP(5) * FROM Notes").ToList();
+            int totalCount = _context.Notes.FromSqlRaw($"SELECT * FROM Notes").Count();
+            int countNum = 10; // 게시판 한페이지에 뿌릴 글 개수
+            int totalpage = totalCount / countNum;
+            if (totalCount % countNum > 0) totalpage++; // 페이지 수를 증가
+            if (totalpage < page) page = totalpage;
 
-            //ViewData["Title"] = "컨트롤러에 온 게시판"; // ViewData는 백엔드 프론트엔 어디든지 쓸수있음
+			int startpage = ((page - 1) / countNum) * countNum + 1; // 1
+            int endpage = startpage + countNum - 1; // 10
+            if(totalpage < endpage) endpage = totalpage;
+
+            int startCount = ((page - 1) * countNum) + 1;//1, 11
+			int endCount = startCount + 9; // 10, 20
+
+            // 뷰에 마지막 페이지, 이전페이지, 다음페이지 표시
+            ViewBag.StartPage = startpage;
+            ViewBag.EndPage = endpage;
+            ViewBag.Page = page;
+            ViewBag.TotalPage = totalpage;
+
+            var list = _context.Notes.FromSqlRaw($"EXECUTE dbo.USP_PagingNotes @StartCount = {startCount}, @EndCount={endCount}").ToList();
+
+            ViewData["Title"] = "컨트롤러에 온 게시판"; // ViewData는 백엔드 프론트엔 어디든지 쓸수있음
             return View(list);
         }
 

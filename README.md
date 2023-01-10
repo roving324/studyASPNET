@@ -48,14 +48,14 @@ ASP.NET Core 학습 리포지토리
    - 게시판 만들기 시작
    - 게시판 리스트
    - 게시판 글 생성
-   - <a href="https://getbootstrap.com">trumbowyg</a>에디터 추가
+   - <a href="https://getbootstrap.com">trumbowyg</a> 에디터 추가
    
 ## 7일차
 1. ASP.NET Core
    - 게시판 추가기능
    - 페이징 기능
    - 게시판 완성
-   - <a href="https://github.com/CodeSeven/toastr">Toastr 사용</a>
+   - <a href="https://github.com/CodeSeven/toastr">Toastr</a> 사용
    
 2. 결과화면
 
