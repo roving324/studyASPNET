@@ -37,6 +37,11 @@ ASP.NET Core 학습 리포지토리
    - 기본개요
    - 기본프로젝트
    - 게시판 만들기 프로젝트 생성
+   - NuGet 패키지 설치
+   <li>Microsoft.EntityFrameworkCore</li>
+   <li>Microsoft.EntityFrameworkCore.SqlServer</li>
+   <li>Microsoft.EntityFrameworkCore.Tools</li>
+   <li>Microsoft.VisualStudio.Web.CodeGeneration.Design</li>
    
 ## 6일차
 1. ASP.NET Core
@@ -45,3 +50,17 @@ ASP.NET Core 학습 리포지토리
    - 게시판 글 생성
    - trumbowyg 에디터 추가
    - <a href="https://getbootstrap.com" target="_blank">참고사이트(Dock, Examples, Icons)</a>
+   
+## 7일차
+1. ASP.NET Core
+   - 게시판 추가기능
+   - 페이징 기능
+   - 게시판 완성
+   
+2. 결과화면
+
+## 8일차
+1. ASP.NET Core
+   - 회원가입
+   - 로그인
+   - 세션관리
