@@ -67,3 +67,7 @@ ASP.NET Core 학습 리포지토리
    - 회원가입 완료
    - 로그인
    - 세션관리
+
+2. 결과화면
+![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/asp.net_screen01.png)
+회원가입화면
