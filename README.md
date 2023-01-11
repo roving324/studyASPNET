@@ -48,7 +48,7 @@ ASP.NET Core 학습 리포지토리
    - 게시판 만들기 시작
    - 게시판 리스트
    - 게시판 글 생성
-   - [trumbowyg]("https://getbootstrap.com")
+   - [trumbowyg](https://getbootstrap.com)
    
 ## 7일차
 1. ASP.NET Core
@@ -56,7 +56,7 @@ ASP.NET Core 학습 리포지토리
    - 페이징 기능
    - 게시판 완성
    - 회원가입 진행 중
-   - [Toastr]("https://github.com/CodeSeven/toastr")
+   - [Toastr](https://github.com/CodeSeven/toastr)
    
 2. 결과화면
 ![게시판페이징화면](https://github.com/roving324/studyASPNET/blob/main/Images/asp.net_screen01.png)
@@ -67,8 +67,8 @@ ASP.NET Core 학습 리포지토리
    - 회원가입 완료
    - 로그인
    - 세션관리
-   - [Freebootstrap]("https://startbootstrap.com/themes")
-   - [velog]("https://velog.io/")
+   - [Freebootstrap](https://startbootstrap.com/themes)
+   - [velog](https://velog.io/)
   
 2. 결과화면
 
