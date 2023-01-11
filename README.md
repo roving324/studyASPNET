@@ -67,7 +67,12 @@ ASP.NET Core 학습 리포지토리
    - 회원가입 완료
    - 로그인
    - 세션관리
-
+   -<a href="https://startbootstrap.com/themes" target="_blank">Freebootstrap</a> 참고
+   -<a href=" https://velog.io/" target="_blank">velog</a> 참고
+  
 2. 결과화면
 ![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/Register.png)
 회원가입화면
+
+![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.png)
+템플릿적용화면

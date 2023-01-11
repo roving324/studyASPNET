@@ -5,6 +5,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using static System.Net.WebRequestMethods;
 
 namespace BoardWebApp.Controllers
 {
@@ -107,7 +108,6 @@ namespace BoardWebApp.Controllers
 
             // 수정메세지 추가
             TempData["success"] = "수정되었습니다.";
-            
             return RedirectToAction("Index", "Note");
 		}
         

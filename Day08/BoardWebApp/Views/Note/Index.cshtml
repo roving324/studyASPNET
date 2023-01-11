@@ -10,16 +10,21 @@
 }
 
 <partial name="_Notification" />
-<meta http-equiv='refresh'>
+<br />
+<br />
+<br />
 <div class="container">
 	<div class="row pt-4">
 		<div class="col-10">
 			<h2 class="text-primary">게시판 리스트</h2>
 		</div>
 		<div class="col text-end">
-			<a asp-controller="Note" asp-action="Create" class="btn btn-primary">
-				<i class="bi bi-file-earmark-plus"></i>글생성
-			</a>
+			@if (signInManager.IsSignedIn(User))
+			{
+				<a asp-controller="Note" asp-action="Create" class="btn btn-primary btn-sm">
+					<i class="bi bi-file-earmark-plus"></i>글생성
+				</a>
+			}
 		</div>
 	</div>
 	<div class="pt-4"></div>
@@ -36,7 +41,7 @@
 							<th>@Html.DisplayNameFor(model => model.Title)</th>
 							<th>@Html.DisplayNameFor(model => model.ReadCount)</th>
 							<th>@Html.DisplayNameFor(model => model.PostDate)</th>
-							<th></th>
+							<th>삭제</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -48,9 +53,11 @@
 								<td><a asp-controller="Note" asp-action="Detail" asp-route-id="@item.Id" class="text-decoration-none">@Html.DisplayFor(modelitem => item.Title)</a></td>
 								<td>@Html.DisplayFor(modelitem => item.ReadCount)</td>
 								<td>@Html.DisplayFor(modelitem => item.PostDate)</td>
-								<td>
-									<!-- 수정, 상세, 삭제 버튼 -->
-									<a asp-controller="Note" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="bi bi-trash3"></i> 삭제</a>
+								<td>@if (signInManager.IsSignedIn(User))
+									{
+										<!-- 수정, 상세, 삭제 버튼 -->
+										<a asp-controller="Note" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> 삭제</a>
+									}
 								</td>
 							</tr>
 						}
