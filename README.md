@@ -74,5 +74,5 @@ ASP.NET Core 학습 리포지토리
 ![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/Register.png)
 회원가입화면
 
-![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.png)
+![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
 템플릿적용화면
