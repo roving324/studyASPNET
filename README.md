@@ -17,7 +17,7 @@ ASP.NET Core 학습 리포지토리
    - 반응형 웹 (Responsive Web)
    - Javascript 문법
    - Dom (Document Object Model)
-   - <a href="https://code.jquery.com">jQuery 사용</a>
+   - [jQuery](https://code.jquery.com)
    
 ## 4일차
 1. 웹 기반기술 총 복습
