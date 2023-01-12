@@ -77,3 +77,23 @@ ASP.NET Core 학습 리포지토리
 
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
 템플릿적용화면
+
+## 9일차
+1. ASP.NET Core
+   - Bootstrap 템플릿 적용 1차 완료
+   - 로그인 계정으로 글쓰기
+   - 메인페이지 DB연동
+   -[stackoverflow](https://stackoverflow.com/)
+   
+2. 개발화면
+![메인페이지](https://github.com/roving324/studyASPNET/blob/main/Images/Day09.PNG)
+메인페이지
+
+## 10일차
+1. ASP.NET Core
+   - 권한관리
+   - 다른 템플릿 적용
+   - 기타 기능
+   - 마무리
+   
+2. 개발화면

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BoardWebApp.Models.Profile>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<partial name="_Notification" />
+<h1>Index</h1>
+
+<p>
+    <a asp-controller="Note" asp-action="Create" class="btn btn-primary btn-sm">
+        <i class="bi bi-file-earmark-plus"></i>프로필추가
+    </a>
+</p>
+<div style="min-height:589px">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Division)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Division)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileName)
+            </td>
+            <td>
+                 <a asp-controller="Profile" class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i>수정</a>
+                        <a asp-controller="Profile" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> 삭제</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
