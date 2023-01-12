@@ -83,7 +83,7 @@ ASP.NET Core 학습 리포지토리
    - Bootstrap 템플릿 적용 1차 완료
    - 로그인 계정으로 글쓰기
    - 메인페이지 DB연동
-   -[stackoverflow](https://stackoverflow.com/)
+   - [stackoverflow](https://stackoverflow.com/)
    
 2. 개발화면
 ![메인페이지](https://github.com/roving324/studyASPNET/blob/main/Images/Day09.PNG)
