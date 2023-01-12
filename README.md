@@ -22,6 +22,7 @@ ASP.NET Core 학습 리포지토리
 ## 4일차
 1. 웹 기반기술 총 복습
    - 핀터레스트 스타일 프론트엔드 연습
+   - [랜덤이미지추가](https://placeimg.com/)
    - [소스](https://github.com/roving324/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
 2. 결과화면
 
@@ -30,7 +31,7 @@ ASP.NET Core 학습 리포지토리
 
 ![라이트박스화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen02.png)
 라이트박스화면<br/>
-[랜덤이미지](https://placeimg.com/)
+
 
 ## 5일차
 1. ASP.NET Core
