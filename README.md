@@ -30,7 +30,7 @@ ASP.NET Core 학습 리포지토리
 
 ![라이트박스화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen02.png)
 라이트박스화면<br/>
-[랜덤이미지("https://placeimg.com/")
+[랜덤이미지(https://placeimg.com/)
 
 ## 5일차
 1. ASP.NET Core
