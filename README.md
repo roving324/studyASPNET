@@ -230,4 +230,6 @@ builder.Services.AddAuthorization(options =>
 ![메인관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Profile.PNG)
 메인관리화면
 
+<br/>
+
 <a href="#main">처음으로</a>
