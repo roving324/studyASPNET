@@ -75,11 +75,11 @@ ASP.NET Core 학습 리포지토리
   
 2. 결과화면
 
-![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/register.png)<br/>
-회원가입화면
-
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
 템플릿적용화면
+
+![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/register.png)<br/>
+회원가입화면
 
 ## 9일차
 1. ASP.NET Core
@@ -109,11 +109,13 @@ ASP.NET Core 학습 리포지토리
    });
    ```
    - 마무리
+   - 최종소스
    
 2. 개발화면
 
-
-
+![권한관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Roles.PNG)
 권한관리화면
 
-최종소스
+![메인관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Profile.PNG)
+메인관리화면
+
