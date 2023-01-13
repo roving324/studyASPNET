@@ -99,3 +99,17 @@ ASP.NET Core 학습 리포지토리
    - 마무리
    
 2. 개발화면
+
+
+<pre>
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
+});
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("EditRolePolicy", policy => policy.RequireRole("Edit Role"));
+    options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
+});
+</pre>
