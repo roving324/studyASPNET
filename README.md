@@ -1,5 +1,7 @@
 # studyASPNET
 ASP.NET Core 학습 리포지토리
+- <img src="https://img.shields.io/badge/아이콘내용-바탕색?style=flat&logo=로고이름&logoColor=white"/>
+- HTML CSS Javascript C#
 
 ## 1일차
 1. Git/Github Desktop 설정
