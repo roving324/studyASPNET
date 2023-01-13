@@ -17,7 +17,6 @@ ASP.NET Core 학습 리포지토리
   
   <br/>
 <a href="#10Day">마지막으로 이동</a></p>
-<a href="https://getbootstrap.com" target="_blank">test</a>
 
 ## 1일차
 1. Git/Github Desktop 설정
