@@ -154,6 +154,12 @@ builder.Services.Configure<IdentityOptions>(
     }
 );
 ```
+
+- 임의의 중복되지 않는 키 생성
+```
+var Newid = Guid.NewGuid().ToString();
+```
+
 2. 결과화면
 
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
