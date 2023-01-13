@@ -26,6 +26,28 @@ ASP.NET Core 학습 리포지토리
    - 핀터레스트 스타일 프론트엔드 연습
    - [랜덤이미지추가](https://placeimg.com/)
    - [소스](https://github.com/roving324/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
+   
+- 메인컨텐트 사이즈별 반응형 웹
+```
+#main-section {
+    width: 920px;
+    margin: 0 auto;
+}
+
+/* 세줄 */
+@media (max-width: 919px) {
+    #main-section {
+      width: 690px
+    }
+}
+
+/* 네줄 */
+@media (min-width: 920px) and (max-width: 1149px) {
+    #main-section {
+      width: 920px
+    }
+}
+```
 2. 결과화면
 
 ![메인화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen01.png)
@@ -73,6 +95,27 @@ ASP.NET Core 학습 리포지토리
    - [Freebootstrap](https://startbootstrap.com/themes)
    - [velog](https://velog.io/)
   
+-오류발생시 출력
+```
+foreach (var error in result.Errors)
+{
+	ModelState.AddModelError(string.Empty, error.Description);
+}  
+```
+
+- 패스워드 정책 변경 설정
+```
+builder.Services.Configure<IdentityOptions>(
+    opt =>
+    {
+        opt.Password.RequiredLength = 4;             // 최소 번호 개수
+        opt.Password.RequireNonAlphanumeric = false; // 특수문자
+        opt.Password.RequireDigit = false;           // 영문자
+        opt.Password.RequireLowercase = false;       // 소문자
+        opt.Password.RequireUppercase = false;       // 대문자
+    }
+);
+```
 2. 결과화면
 
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
@@ -80,6 +123,8 @@ ASP.NET Core 학습 리포지토리
 
 ![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/register.png)<br/>
 회원가입화면
+
+
 
 ## 9일차
 1. ASP.NET Core
