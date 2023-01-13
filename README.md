@@ -100,7 +100,7 @@ ASP.NET Core 학습 리포지토리
    
 2. 개발화면
 
-
+<div class = "overflow-auto"">
 <pre>
 builder.Services.AddAuthorization(options =>
 {
@@ -113,3 +113,4 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
 });
 </pre>
+</div>
