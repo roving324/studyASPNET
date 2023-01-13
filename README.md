@@ -1,3 +1,4 @@
+<a name="main"></a>
 <p align="center" dir="auto">
     <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0a8394c0ebe79b04b29d7b9d84399d07ec746f8b761c8251b8c4789ab02b541c/68747470733a2f2f726561646d652d747970696e672d7376672e6865726f6b756170702e636f6d2f3f6c696e65733d48656c6c6f3b57656c636f6d652b746f2b6d792b70726f66696c65213b486176652b612b6c6f6f6b2b61726f756e642126666f6e743d46697261253230436f646526636f6c6f723d2532334436324637392663656e7465723d747275652677696474683d323830266865696768743d3530"><img src="https://camo.githubusercontent.com/0a8394c0ebe79b04b29d7b9d84399d07ec746f8b761c8251b8c4789ab02b541c/68747470733a2f2f726561646d652d747970696e672d7376672e6865726f6b756170702e636f6d2f3f6c696e65733d48656c6c6f3b57656c636f6d652b746f2b6d792b70726f66696c65213b486176652b612b6c6f6f6b2b61726f756e642126666f6e743d46697261253230436f646526636f6c6f723d2532334436324637392663656e7465723d747275652677696474683d323830266865696768743d3530" data-canonical-src="https://readme-typing-svg.herokuapp.com/?lines=Hello;Welcome+to+my+profile!;Have+a+look+around!&amp;font=Fira%20Code&amp;color=%23D62F79&amp;center=true&amp;width=280&amp;height=50" style="max-width: 100%;"></a>
 </p>
@@ -13,6 +14,10 @@ ASP.NET Core 학습 리포지토리
 
 - 그 외<br/>
   <img alt="Bootstrap" src ="https://img.shields.io/badge/Bootstrap-7952B3.svg?&style=for-the-badge&logo=Bootstrap&logoColor=violet"/>
+  
+  <br/>
+<a href="#10Day">마지막으로 이동</a></p>
+<a href="https://getbootstrap.com" target="_blank">test</a>
 
 ## 1일차
 1. Git/Github Desktop 설정
@@ -194,6 +199,7 @@ var Newid = Guid.NewGuid().ToString();
 ![메인페이지](https://github.com/roving324/studyASPNET/blob/main/Images/Day09.PNG)
 메인페이지 DB연동
 
+<a name="10Day"></a>
 ## 10일차
 1. ASP.NET Core
    - 메인페이지 DB연동(관리자) 완료
@@ -225,3 +231,4 @@ builder.Services.AddAuthorization(options =>
 ![메인관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Profile.PNG)
 메인관리화면
 
+<a href="#main">처음으로</a>
