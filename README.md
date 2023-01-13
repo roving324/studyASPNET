@@ -43,6 +43,13 @@ $(document).ready(function () {
 });
 ```
 
+- 시각효과
+```
+$('input').click(function () {
+    $('.page').toggle(2000); // 2000ms = 2sec slideToggle,fadeToggle,toggle
+});
+```
+
 ## 4일차
 1. 웹 기반기술 총 복습
    - 핀터레스트 스타일 프론트엔드 연습
