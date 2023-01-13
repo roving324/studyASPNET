@@ -32,7 +32,7 @@ ASP.NET Core 학습 리포지토리
    - Dom (Document Object Model)
    - [jQuery](https://code.jquery.com)
 
-Function
+Function(event)
 ```
 $(document).ready(function () {
    $('h1').click(function () {
