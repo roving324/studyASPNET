@@ -62,7 +62,7 @@ ASP.NET Core 학습 리포지토리
    - [Toastr](https://github.com/CodeSeven/toastr)
    
 2. 결과화면
-![게시판페이징화면](https://github.com/roving324/studyASPNET/blob/main/Images/asp.net_screen01.png)
+![게시판페이징화면](https://github.com/roving324/studyASPNET/blob/main/Images/Index.PNG)
 게시판페이징화면
 
 ## 8일차
