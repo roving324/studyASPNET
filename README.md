@@ -32,7 +32,7 @@ ASP.NET Core 학습 리포지토리
    - Dom (Document Object Model)
    - [jQuery](https://code.jquery.com)
 
-Function(event)
+- Function(event)
 ```
 $(document).ready(function () {
    $('h1').click(function () {
@@ -68,6 +68,24 @@ $(document).ready(function () {
     }
 }
 ```
+
+- 이미지 클릭 확대 이벤트
+```
+// 같은 이미지 출력
+            function showLightBox(obj) {
+
+                var img_src = obj.getElementsByTagName('img')[0].src;
+                // 라이트박스 보이게 하기
+                $('#random-image').attr({
+                    src: img_src
+                });
+                $('#darken-background').show();
+                $('#darken-background').css('top', $(window).scrollTop());
+                // 스크롤 금지
+                $('body').css('overflow', 'hidden');
+            }
+```
+
 2. 결과화면
 
 ![메인화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen01.png)
@@ -115,7 +133,7 @@ $(document).ready(function () {
    - [Freebootstrap](https://startbootstrap.com/themes)
    - [velog](https://velog.io/)
   
--오류발생시 출력
+- 오류발생시 출력
 ```
 foreach (var error in result.Errors)
 {
@@ -161,21 +179,23 @@ builder.Services.Configure<IdentityOptions>(
 1. ASP.NET Core
    - 메인페이지 DB연동(관리자) 완료
    - 권한관리
-   ```
-   builder.Services.AddAuthorization(options =>
-   {
-       options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
-   });
-   
-   builder.Services.AddAuthorization(options =>
-   {
-       options.AddPolicy("EditRolePolicy", policy => policy.RequireRole("Edit Role"));
-       options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
-   });
-   ```
    - 마무리
    - [최종 Code](https://github.com/roving324/studyASPNET/tree/main/Day10/BoardWebApp)
-   
+  
+- 권한관리 설정
+```
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
+});
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("EditRolePolicy", policy => policy.RequireRole("Edit Role"));
+    options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
+});
+```
+
 2. 개발화면
 
 ![권한관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Roles.PNG)
