@@ -53,7 +53,7 @@ $('input').click(function () {
 ## 4일차
 1. 웹 기반기술 총 복습
    - 핀터레스트 스타일 프론트엔드 연습
-   - [랜덤이미지추가](https://placeimg.com/)
+   - [랜덤이미지](https://placeimg.com/)
    - [소스](https://github.com/roving324/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
    
 2. 중요 코드
