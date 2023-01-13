@@ -47,7 +47,7 @@ $(document).ready(function () {
    - [랜덤이미지추가](https://placeimg.com/)
    - [소스](https://github.com/roving324/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
    
-- 메인컨텐트 사이즈별 반응형 웹
+- 메인컨텐츠 사이즈별 반응형 웹
 ```
 #main-section {
     width: 920px;
