@@ -199,7 +199,7 @@ var Newid = Guid.NewGuid().ToString();
    - 메인페이지 DB연동(관리자) 완료
    - 권한관리
    - 마무리
-   - [최종 Code](https://github.com/roving324/studyASPNET/tree/main/Day10/BoardWebApp)
+   - [최종코드](https://github.com/roving324/studyASPNET/tree/main/Day10/BoardWebApp)
   
 2. 중요 코드
   
