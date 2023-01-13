@@ -32,6 +32,8 @@ ASP.NET Core 학습 리포지토리
    - Dom (Document Object Model)
    - [jQuery](https://code.jquery.com)
 
+2. 중요 코드
+
 - Function(event)
 ```
 $(document).ready(function () {
@@ -47,6 +49,8 @@ $(document).ready(function () {
    - [랜덤이미지추가](https://placeimg.com/)
    - [소스](https://github.com/roving324/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
    
+2. 중요 코드
+
 - 메인컨텐츠 사이즈별 반응형 웹
 ```
 #main-section {
@@ -86,7 +90,7 @@ $(document).ready(function () {
             }
 ```
 
-2. 결과화면
+3. 결과화면
 
 ![메인화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen01.png)
 메인화면
@@ -132,7 +136,9 @@ $(document).ready(function () {
    - 세션관리
    - [Freebootstrap](https://startbootstrap.com/themes)
    - [velog](https://velog.io/)
-  
+
+2. 중요 코드
+
 - 오류발생시 출력
 ```
 foreach (var error in result.Errors)
@@ -160,7 +166,7 @@ builder.Services.Configure<IdentityOptions>(
 var Newid = Guid.NewGuid().ToString();
 ```
 
-2. 결과화면
+3. 결과화면
 
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
 템플릿적용화면
@@ -188,6 +194,8 @@ var Newid = Guid.NewGuid().ToString();
    - 마무리
    - [최종 Code](https://github.com/roving324/studyASPNET/tree/main/Day10/BoardWebApp)
   
+2. 중요 코드
+  
 - 권한관리 설정
 ```
 builder.Services.AddAuthorization(options =>
@@ -202,7 +210,7 @@ builder.Services.AddAuthorization(options =>
 });
 ```
 
-2. 개발화면
+3. 개발화면
 
 ![권한관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Roles.PNG)
 권한관리화면
