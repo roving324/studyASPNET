@@ -100,7 +100,7 @@ ASP.NET Core 학습 리포지토리
    
 2. 개발화면
 
-<div class = "overflow-auto"">
+<div class = "highlight-text-html-basic overflow-auto"">
 <pre>
 builder.Services.AddAuthorization(options =>
 {
