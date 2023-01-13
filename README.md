@@ -90,27 +90,30 @@ ASP.NET Core 학습 리포지토리
    
 2. 개발화면
 ![메인페이지](https://github.com/roving324/studyASPNET/blob/main/Images/Day09.PNG)
-메인페이지
+메인페이지 DB연동
 
 ## 10일차
 1. ASP.NET Core
    - 메인페이지 DB연동(관리자) 완료
    - 권한관리
+   ```
+   builder.Services.AddAuthorization(options =>
+   {
+       options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
+   });
+   
+   builder.Services.AddAuthorization(options =>
+   {
+       options.AddPolicy("EditRolePolicy", policy => policy.RequireRole("Edit Role"));
+       options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
+   });
+   ```
    - 마무리
    
 2. 개발화면
 
-<div class = "highlight-text-html-basic overflow-auto"">
-<pre>
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
-});
 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("EditRolePolicy", policy => policy.RequireRole("Edit Role"));
-    options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
-});
-</pre>
-</div>
+
+권한관리화면
+
+최종소스
