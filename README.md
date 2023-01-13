@@ -66,7 +66,7 @@ ASP.NET Core 학습 리포지토리
 ## 8일차
 1. ASP.NET Core
    - 회원가입 완료
-   - 로그인
+   - 계정관리(회원가입,로그인)
    - 세션관리
    - [Freebootstrap](https://startbootstrap.com/themes)
    - [velog](https://velog.io/)
@@ -92,9 +92,8 @@ ASP.NET Core 학습 리포지토리
 
 ## 10일차
 1. ASP.NET Core
+   - 메인페이지 DB연동(관리자) 완료
    - 권한관리
-   - 다른 템플릿 적용
-   - 기타 기능
    - 마무리
    
 2. 개발화면
