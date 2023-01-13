@@ -5,7 +5,11 @@
 }
 <partial name="_Notification" />
 <h1>Profile</h1>
-
+<script>
+    $(document).ready(function () {
+        $('#menu_Role').addClass('active');
+    });
+</script>
 <p>
     <a asp-controller="Profile" asp-action="Create" class="btn btn-primary btn-sm">
         <i class="bi bi-file-earmark-plus"></i>프로필추가
