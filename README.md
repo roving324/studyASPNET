@@ -165,7 +165,7 @@ builder.Services.Configure<IdentityOptions>(
    });
    ```
    - 마무리
-   - 최종소스
+   - [최종 Code](https://github.com/roving324/studyASPNET/tree/main/Day10/BoardWebApp)
    
 2. 개발화면
 
