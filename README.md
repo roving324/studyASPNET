@@ -101,7 +101,7 @@ $('input').click(function () {
             }
 ```
 
-3. 결과화면
+3. 개발화면
 
 ![메인화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen01.png)
 메인화면
@@ -136,7 +136,7 @@ $('input').click(function () {
    - 회원가입 진행 중
    - [Toastr](https://github.com/CodeSeven/toastr)
    
-2. 결과화면
+2. 개발화면
 ![게시판페이징화면](https://github.com/roving324/studyASPNET/blob/main/Images/Index.PNG)
 게시판페이징화면
 
@@ -177,7 +177,7 @@ builder.Services.Configure<IdentityOptions>(
 var Newid = Guid.NewGuid().ToString();
 ```
 
-3. 결과화면
+3. 개발화면
 
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
 템플릿적용화면
