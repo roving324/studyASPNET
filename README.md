@@ -23,18 +23,24 @@ ASP.NET Core 학습 리포지토리
 2. Visual Studio(IDE) 개발환경 설정
 3. 웹 기반기술
    - HTML 5, CSS 3, javascript (ECMAScript 6) 전체개요
-  
+
+<br/>
+
 ## 2일차
 1. 웹 기반기술
    - HTML 기본태그
    - CSS 전반 학습
-   
+ 
+<br/> 
+ 
 ## 3일차
 1. 웹 기반기술
    - 반응형 웹 (Responsive Web)
    - Javascript 문법
    - Dom (Document Object Model)
    - [jQuery](https://code.jquery.com)
+
+<br/>
 
 2. 중요 코드
 
@@ -47,6 +53,8 @@ $(document).ready(function () {
 });
 ```
 
+<br/>
+
 - 시각효과
 ```
 $('input').click(function () {
@@ -54,12 +62,16 @@ $('input').click(function () {
 });
 ```
 
+<br/>
+
 ## 4일차
 1. 웹 기반기술 총 복습
    - 핀터레스트 스타일 프론트엔드 연습
    - [랜덤이미지](https://placeimg.com/)
    - [소스](https://github.com/roving324/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
-   
+
+<br/>
+
 2. 중요 코드
 
 - 메인컨텐츠 사이즈별 반응형 웹
@@ -83,6 +95,8 @@ $('input').click(function () {
     }
 }
 ```
+<br/>
+
 
 - 이미지 클릭 확대 이벤트
 ```
@@ -101,14 +115,19 @@ $('input').click(function () {
             }
 ```
 
+<br/>
+
 3. 개발화면
 
 ![메인화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen01.png)
 메인화면
 
+<br/>
+
 ![라이트박스화면](https://github.com/roving324/studyASPNET/blob/main/Images/html_screen02.png)
 라이트박스화면<br/>
 
+<br/>
 
 ## 5일차
 1. ASP.NET Core
@@ -120,14 +139,18 @@ $('input').click(function () {
      - Microsoft.EntityFrameworkCore.SqlServer
      - Microsoft.EntityFrameworkCore.Tools
      - Microsoft.VisualStudio.Web.CodeGeneration.Design
-   
+  
+ <br/> 
+  
 ## 6일차
 1. ASP.NET Core
    - 게시판 만들기 시작
    - 게시판 리스트
    - 게시판 글 생성
    - [trumbowyg](https://getbootstrap.com)
-   
+  
+<br/>  
+  
 ## 7일차
 1. ASP.NET Core
    - 게시판 추가기능
@@ -135,10 +158,14 @@ $('input').click(function () {
    - 게시판 완성
    - 회원가입 진행 중
    - [Toastr](https://github.com/CodeSeven/toastr)
-   
+
+<br/>
+
 2. 개발화면
 ![게시판페이징화면](https://github.com/roving324/studyASPNET/blob/main/Images/Index.PNG)
 게시판페이징화면
+
+<br/>
 
 ## 8일차
 1. ASP.NET Core
@@ -147,6 +174,8 @@ $('input').click(function () {
    - 세션관리
    - [Freebootstrap](https://startbootstrap.com/themes)
    - [velog](https://velog.io/)
+
+<br/>
 
 2. 중요 코드
 
@@ -157,6 +186,8 @@ foreach (var error in result.Errors)
 	ModelState.AddModelError(string.Empty, error.Description);
 }  
 ```
+
+<br/>
 
 - 패스워드 정책 변경 설정
 ```
@@ -172,6 +203,8 @@ builder.Services.Configure<IdentityOptions>(
 );
 ```
 
+<br/>
+
 - 패스워드 일치 여부
 ```
 public string Password { get; set; }
@@ -180,20 +213,26 @@ public string Password { get; set; }
 public string ConfirmPassword { get; set; }
 ```
 
+<br/>
+
 - 임의의 중복되지 않는 키 생성
 ```
 var Newid = Guid.NewGuid().ToString();
 ```
+
+<br/>
 
 3. 개발화면
 
 ![템플릿적용화면](https://github.com/roving324/studyASPNET/blob/main/Images/template.PNG)
 템플릿적용화면
 
+<br/>
+
 ![회원가입화면](https://github.com/roving324/studyASPNET/blob/main/Images/register.png)<br/>
 회원가입화면
 
-
+<br/>
 
 ## 9일차
 1. ASP.NET Core
@@ -202,11 +241,15 @@ var Newid = Guid.NewGuid().ToString();
    - 메인페이지 DB연동
    - [stackoverflow](https://stackoverflow.com/)
 
+<br/>
+
 2. 중요 코드
 - textarea 사용
 ```
  <textarea asp-for="Contents" class="form-control editor" rows="10" placeholder="본문내용"></textarea>
 ```
+ 
+<br/>
  
 3. 개발화면
 ![메인페이지](https://github.com/roving324/studyASPNET/blob/main/Images/Day09.PNG)
@@ -219,9 +262,11 @@ var Newid = Guid.NewGuid().ToString();
    - 권한관리
    - 마무리
    - [최종코드](https://github.com/roving324/studyASPNET/tree/main/Day10/BoardWebApp)
-  
+
+<br/>
+
 2. 중요 코드
-  
+
 - 권한관리 설정
 ```
 builder.Services.AddAuthorization(options =>
@@ -236,8 +281,10 @@ builder.Services.AddAuthorization(options =>
 });
 ```
 
--
-``` 프로필에 이미지 파일올리기
+<br/>
+
+- 프로필에 이미지 파일올리기
+```
 [FileExtensions(Extensions = ".jpg, .png, .jpeg", ErrorMessage = "이미지 파일을 선택하세요.")]
 public string? FileName { get; set; }
 
@@ -246,10 +293,14 @@ public IFormFile? ProFileImage { get; set; }
 <input asp-for="ProFileImage" class="form-control" type="file" accept=".jpg, .png, .jpeg" />
 ```
 
+<br/>
+
 3. 개발화면
 
 ![권한관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Roles.PNG)
 권한관리화면
+
+<br/>
 
 ![메인관리화면](https://github.com/roving324/studyASPNET/blob/main/Images/Profile.PNG)
 메인관리화면
