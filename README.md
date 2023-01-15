@@ -172,6 +172,14 @@ builder.Services.Configure<IdentityOptions>(
 );
 ```
 
+- 패스워드 일치 여부
+```
+public string Password { get; set; }
+
+[Compare("Password", ErrorMessage = "패스워드가 일치하지 않습니다.")]
+public string ConfirmPassword { get; set; }
+```
+
 - 임의의 중복되지 않는 키 생성
 ```
 var Newid = Guid.NewGuid().ToString();
@@ -193,8 +201,14 @@ var Newid = Guid.NewGuid().ToString();
    - 로그인 계정으로 글쓰기
    - 메인페이지 DB연동
    - [stackoverflow](https://stackoverflow.com/)
-   
-2. 개발화면
+
+2. 중요 코드
+- textarea 사용
+```
+ <textarea asp-for="Contents" class="form-control editor" rows="10" placeholder="본문내용"></textarea>
+```
+ 
+3. 개발화면
 ![메인페이지](https://github.com/roving324/studyASPNET/blob/main/Images/Day09.PNG)
 메인페이지 DB연동
 
@@ -220,6 +234,16 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("EditRolePolicy", policy => policy.RequireRole("Edit Role"));
     options.AddPolicy("DeleteRolePolicy", policy => policy.RequireRole("Delete Role"));
 });
+```
+
+-
+``` 프로필에 이미지 파일올리기
+[FileExtensions(Extensions = ".jpg, .png, .jpeg", ErrorMessage = "이미지 파일을 선택하세요.")]
+public string? FileName { get; set; }
+
+public IFormFile? ProFileImage { get; set; }
+
+<input asp-for="ProFileImage" class="form-control" type="file" accept=".jpg, .png, .jpeg" />
 ```
 
 3. 개발화면
